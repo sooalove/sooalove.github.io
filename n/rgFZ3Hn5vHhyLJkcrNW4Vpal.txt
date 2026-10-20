@@ -1,1 +1,1 @@
-nmap://navigation?dlat=36.3483&dlng=127.383506&dname=%ED%8C%94%EB%A0%88%EB%93%9C%EC%98%A4%ED%8E%98%EB%9D%BC&appname=com.example.myapp
+ 
