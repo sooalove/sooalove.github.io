@@ -1,0 +1,8 @@
+<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content=noindex><title>…</title>
+<body style="font:20px sans-serif;padding:24px"><p id=m>여는 중…</p><script>
+const S="olWFZf49nvbxEbXoGomtOQ==",I="3PAUSIcNiPOmMyvi",C="inT/TSSw0G1ZKXwZtfTSUPUlrrJbKKjMyhB8bBEBeVZ7Q+R5HD8wtI5TddfRGRBFmmB7ivS9m3dSiZLnbbYvXqpbAOQoN+21PCxTCKdVoG7Noj5HnbydBl4=";const d=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+(async()=>{try{const c=location.hash.slice(1).trim().toLowerCase();if(!c)throw 0;
+const k=await crypto.subtle.importKey('raw',new TextEncoder().encode(c),'PBKDF2',false,['deriveKey']);
+const a=await crypto.subtle.deriveKey({name:'PBKDF2',salt:d(S),iterations:150000,hash:'SHA-256'},k,{name:'AES-GCM',length:256},false,['decrypt']);
+const u=new TextDecoder().decode(await crypto.subtle.decrypt({name:'AES-GCM',iv:d(I)},a,d(C)));location.replace(u);
+}catch(e){document.getElementById('m').textContent='주소가 올바르지 않아요';}})();</script>
