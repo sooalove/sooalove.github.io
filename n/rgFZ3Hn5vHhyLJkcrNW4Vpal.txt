@@ -1,1 +1,1 @@
- 
+nmap://navigation?dlat=36.37306&dlng=127.36056&dname=KAIST%20%EC%B9%B4%EC%9D%B4%EC%8A%A4%ED%8A%B8%20%EB%B3%B8%EC%9B%90&appname=com.example.myapp
